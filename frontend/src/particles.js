@@ -1,7 +1,7 @@
 const particlesJSON = {
 	background: {
 		color: {
-			value: "#24486d",
+			value: "#ececec",
 		},
 		position: "50% 50%",
 		repeat: "no-repeat",
@@ -36,6 +36,9 @@ const particlesJSON = {
 		},
 	},
 	particles: {
+		color: {
+			value:  "#333333"
+		},
 		links: {
 			color: {
 				value: "#ffffff",

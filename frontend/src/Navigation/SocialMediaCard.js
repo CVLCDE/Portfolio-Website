@@ -1,6 +1,5 @@
 import Card from "@material-ui/core/Card";
 import { makeStyles } from "@material-ui/core/styles";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
@@ -30,10 +29,10 @@ export const SocialMediaCard = (props) => {
 		<Link href={props.link} target="_blank" rel="noreferrer">
 			<Card className={classes.root}>
 				<Paper elevation={2} className={classes.paper}>
-					<GitHubIcon fontSize="large" />
+					{ props.icon }
 				</Paper>
 				<div className={classes.textWrapper}>
-					<Typography variant="h6">GitHub</Typography>
+					<Typography variant="h6">{ props.text }</Typography>
 				</div>
 			</Card>
 		</Link>

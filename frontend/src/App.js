@@ -19,14 +19,16 @@ function App() {
 					container
 					item
 					xs={1}
-					alignItems="center"
 					justify="center"
 				>
 					<Navbar />
 				</Grid>
-
 				<Grid item justify="center" xs={11}>
 					<Container>
+						<Main />
+						<hr />
+						<Main />
+						<hr />
 						<Main />
 					</Container>
 				</Grid>
