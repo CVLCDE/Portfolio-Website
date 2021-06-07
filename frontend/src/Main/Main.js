@@ -1,3 +1,4 @@
+import React from 'react'
 import "./main.css";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -29,14 +30,14 @@ export const Main = () => {
       height: theme.spacing(50),
     },
     textColor: {
-      color: "#212121",
+      color: "#333",
       fontWeight: "bold"
     },
   }));
 
   const classes = useStyles();
   return (
-    <Box display="flex" flexDirection="column" margin="3% 0">
+    <Box display="flex" flexDirection="column"  height="100vh" justifyContent="center">
       <div className={classes.root}>
         <Avatar className={classes.large} src={Myself} />
       </div>
