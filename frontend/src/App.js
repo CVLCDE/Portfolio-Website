@@ -7,6 +7,7 @@ import { Main } from "./Main/Main.js";
 import { Projects } from "./Projects/Projects.js"
 import Container from "@material-ui/core/Container";
 import { Navbar } from "./Navigation/Navbar.js";
+import { Blogs } from "./Blogs/Blogs.js"
 
 import Grid from "@material-ui/core/Grid";
 
@@ -35,7 +36,7 @@ function App() {
 						<hr />
 						<Projects />
 						<hr />
-						<Main />
+						<Blogs />
 					</Container>
 				</Grid>
 			</Grid>
