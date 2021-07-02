@@ -10,11 +10,15 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
     card: {
-        maxWidth: "90%",
+        minWidth: "90%",
+        minHeight: "100%"
     },
     image: {
         width: "100%",
         height: 240,
+    },
+    description: {
+        minHeight: "60px"
     },
     icons: {
         display: "flex",
@@ -60,7 +64,7 @@ export const ProjectCard = (props) => {
                     </CardActions>
                 </CardActionArea>
 
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" className={classes.description}>
                     {props.desc}
                 </Typography>
             </CardContent>
