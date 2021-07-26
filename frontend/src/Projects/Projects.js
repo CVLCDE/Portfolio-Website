@@ -55,7 +55,7 @@ export const Projects = () => {
     ];
 
     return (
-        <Box display="flex" flexDirection="column" height="100vh">
+        <Box display="flex" flexDirection="column" height="100vh" id="Projects">
             <Typography
                 variant="h2"
                 component="h2"

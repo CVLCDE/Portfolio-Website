@@ -30,15 +30,25 @@ export const Navbar = () => {
 			position="sticky"
 			top="0"
 		>
-			<Paper className={classes.paper} elevation={3}>
-				<InfoIcon fontSize="large" />
-			</Paper>
-			<Paper className={classes.paper} elevation={3}>
-				<CodeIcon fontSize="large" />
-			</Paper>
-			<Paper className={classes.paper} elevation={3}>
-				<CreateIcon fontSize="large" />
-			</Paper>
+			<a href="#Info">
+				<Paper className={classes.paper} elevation={3}>
+					<InfoIcon fontSize="large" />
+				</Paper>
+			</a>
+
+			<a href="#Projects">
+				<Paper className={classes.paper} elevation={3}>
+					<CodeIcon fontSize="large" />
+				</Paper>
+			</a>
+		
+
+			<a href="#Education">
+				<Paper className={classes.paper} elevation={3}>
+					<CreateIcon fontSize="large" />
+				</Paper>
+			</a>
+		
 		</Box>
 	);
 };

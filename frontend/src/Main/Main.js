@@ -37,7 +37,7 @@ export const Main = () => {
 
   const classes = useStyles();
   return (
-    <Box display="flex" flexDirection="column"  height="100vh" justifyContent="center">
+    <Box display="flex" flexDirection="column"  height="100vh" justifyContent="center" id="Info">
       <div className={classes.root}>
         <Avatar className={classes.large} src={Myself} />
       </div>

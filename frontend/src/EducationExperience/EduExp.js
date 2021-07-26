@@ -19,7 +19,7 @@ export const EduExp = () => {
     const classes = useStyles();
 
     return (
-        <div>
+        <div id="Education">
             <Typography variant="h2" component="h2" align="left" className={classes.heading}>
             Education and Experience 
             </Typography>

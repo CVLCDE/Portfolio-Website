@@ -10,6 +10,12 @@ import CardActions from "@material-ui/core/CardActions";
 import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
 import '@brainhubeu/react-carousel/lib/style.css';
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faPython} from "@fortawesome/free-brands-svg-icons"
+import {faJava} from "@fortawesome/free-brands-svg-icons"
+import {faJsSquare} from "@fortawesome/free-brands-svg-icons"
+import {faDatabase} from "@fortawesome/free-solid-svg-icons"
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
 	heading: {
@@ -30,9 +36,13 @@ export const Exp = () => {
     return (
         <Box className={classes.box}>
             <Typography variant="h5" className={classes.heading}>Programming Languages</Typography>
-            <div>
-
-            </div>
+            <Grid container spacing={4} alignContent="center">
+                <Grid item><FontAwesomeIcon icon={faReact} size="4x" /></Grid>
+                <Grid item><FontAwesomeIcon icon={faPython} size="4x" /> </Grid>
+                <Grid item><FontAwesomeIcon icon={faJava} size="4x" /></Grid>
+                <Grid item><FontAwesomeIcon icon={faJsSquare} size="4x" /></Grid>
+                <Grid item><FontAwesomeIcon icon={faDatabase} size="4x" /></Grid>
+            </Grid>
         </Box>
     );
 };

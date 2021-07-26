@@ -24,11 +24,11 @@ function App() {
                 </Grid>
                 <Grid item justify="center" xs={11}>
                     <Container>
-                        <Main />
+                        <Main id="Info" />
                         <hr />
-                        <Projects />
+                        <Projects id="Projects"/>
                         <hr />
-                        <EduExp />
+                        <EduExp id="Education"/>
                     </Container>
                 </Grid>
             </Grid>
