@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from '@material-ui/core/Box'
 import { Edu } from "./Edu.js"
+import { Exp } from "./Exp.js"
 
 const useStyles = makeStyles({
 	heading: {
@@ -18,13 +19,16 @@ export const EduExp = () => {
     const classes = useStyles();
 
     return (
-        <Box display="flex" justifyContent="center" flexDirection="column" height="100%">
+        <div>
             <Typography variant="h2" component="h2" align="left" className={classes.heading}>
-               Education and Experience 
+            Education and Experience 
             </Typography>
+            <Box display="flex" justifyContent="center" flexDirection="row" height="100%">
+                <Edu />
+                <Exp />
+            </Box>
+        </div>
 
-            <Edu />
-        </Box>
     );
 };
 
